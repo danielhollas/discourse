@@ -21,6 +21,10 @@
     {{#if model.remote_theme.license_url}}
       <a class="url license-url" href="{{model.remote_theme.license_url}}">{{i18n "admin.customize.theme.license"}} {{d-icon "copyright"}}</a>
     {{/if}}
+    {{! TODO: This variable does not seem to work: model.remote_theme.branch }} 
+    {{! TODO: Need Handlebars helper to generate proper URL for non-default branch
+      i.e. strip .git from the end and add /tree/branch_name }}
+    <a class="url github-url" href="{{model.remote_theme.remote_url}}">{{i18n "admin.customize.theme.github_url"}}</a>
   {{/if}}
 
   {{#if parentThemes}}

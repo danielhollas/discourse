@@ -3276,6 +3276,7 @@ en:
           remote_branch: "Branch name (optional)"
           public_key: "Grant the following public key access to the repo:"
           about_theme: "About Theme"
+          github_url: "Link to Github"
           license: "License"
           component_of: "Component of:"
           update_to_latest: "Update to Latest"
